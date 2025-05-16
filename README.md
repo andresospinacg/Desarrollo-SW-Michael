@@ -1,11 +1,11 @@
 
-# 🎬 Catálogo de Películas
+#  Catálogo de Películas
 
 Este proyecto consiste en un sitio web que permite listar, buscar, filtrar y visualizar el detalle de películas, además de permitir a los usuarios dejar comentarios. 
 
 ---
 
-## 🚀 Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - HTML5
 - CSS3 (con Bootstrap 5)
@@ -15,7 +15,7 @@ Este proyecto consiste en un sitio web que permite listar, buscar, filtrar y vis
 
 ---
 
-## 🧠 Funcionalidades implementadas
+##  Funcionalidades implementadas
 
 - Visualización de películas con imagen, año y sinopsis.
 - Búsqueda por título.
