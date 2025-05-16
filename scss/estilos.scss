@@ -1,0 +1,67 @@
+// VARIABLES SASS
+$rojo-cine: #e50914;
+$negro-fondo: #141414;
+$gris-texto: #e5e5e5;
+$gris-oscuro: #333;
+$dorado: #ffd700;
+
+// INTERPOLACIÓN 1: uso de variable para nombre de clase
+$color-boton: "primary";
+
+body {
+  background-color: $negro-fondo;
+  color: $gris-texto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(229,9,20,0.1) 0%, transparent 70%);
+    z-index: -1;
+    animation: movimiento-proyector 15s infinite alternate;
+  }
+}
+
+// ANIDACIÓN DE SELECTORES
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 0 0 10px $rojo-cine, 0 0 20px $rojo-cine;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, $rojo-cine, $dorado, $rojo-cine);
+  }
+}
+
+// INTERPOLACIÓN 2
+.btn-#{$color-boton} {
+  background-color: $rojo-cine;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($rojo-cine, 10%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(229,9,20,0.4);
+  }
+}
