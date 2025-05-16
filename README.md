@@ -83,7 +83,7 @@ El archivo `.gitignore` fue configurado para excluir el `estilos.css.map` genera
 
 ##   Sitio Web
 
-(https://github.com/Michael-S-Marin-E/Desarrollo-SW-Michael.git)  
+https://michael-s-marin-e.github.io/Desarrollo-SW-Michael  
 
 
 ---
