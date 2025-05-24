@@ -1,0 +1,16 @@
+.card {
+  margin-bottom: 1rem;
+  
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+}
+
+.form-control, .form-select {
+  margin-bottom: 1rem;
+} 

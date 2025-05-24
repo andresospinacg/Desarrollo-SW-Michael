@@ -1,0 +1,20 @@
+.form-control {
+  margin-bottom: 1rem;
+  
+  &:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+}
+
+textarea.form-control {
+  min-height: 150px;
+}
+
+.card {
+  margin-top: 2rem;
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+} 

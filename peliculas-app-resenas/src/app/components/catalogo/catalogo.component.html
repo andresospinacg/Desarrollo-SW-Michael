@@ -1,0 +1,35 @@
+<div class="container my-4">
+  <h1 class="mb-4">Catálogo de Películas</h1>
+  
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="buscador" class="form-label">Buscar película</label>
+        <input type="text" class="form-control" id="buscador" placeholder="Escribe un título..." [(ngModel)]="terminoBusqueda" (input)="filtrarPeliculas()">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="filtro-fecha" class="form-label">Filtrar por año</label>
+        <select class="form-select" id="filtro-fecha" [(ngModel)]="anioSeleccionado" (change)="filtrarPeliculas()">
+          <option value="">Todos los años</option>
+          <option *ngFor="let anio of anios" [value]="anio">{{anio}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="listado-peliculas">
+    <div class="col-md-4 mb-4" *ngFor="let pelicula of peliculasFiltradas">
+      <div class="card h-100">
+        <img [src]="pelicula.poster" class="card-img-top" [alt]="pelicula.titulo">
+        <div class="card-body">
+          <h5 class="card-title">{{pelicula.titulo}}</h5>
+          <p class="card-text">{{pelicula.descripcion}}</p>
+          <p class="card-text"><small class="text-muted">Año: {{pelicula.anio}}</small></p>
+          <a [routerLink]="['/pelicula', pelicula.titulo]" class="btn btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
