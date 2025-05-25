@@ -83,7 +83,7 @@ El archivo `.gitignore` fue configurado para excluir el `estilos.css.map` genera
 
 ##   Sitio Web
 
-https://michael-s-marin-e.github.io/Desarrollo-SW-Michael  
+https://andresospinacg.github.io/Desarrollo-SW-Michael/
 
 ## Video Presentación
 
@@ -96,4 +96,9 @@ https://youtu.be/fggovSrfecM
 **Michael Marin**  
 **msmarin@ucompensar.edu.co**
 
+**Fabian Andres Ospina Clavijo**
+**fandresospina@ucompensar.edu.co**
+
+**Andres Felipe Orjuela Arias**
+**afelipeorjuela@ucompensar.edu.co**
 ---
